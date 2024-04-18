@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap')
+
+
+*{
+  font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+background-image:url('img/back.jpg');	
+background-size:100%;
+}
+
+.logo_img{
+margin:20px;
+width:200px;
+height:200px;
+animation:dribble 2s ease;
+animation-iteration-count: 1;
+animation-duration:normal;
+border-radius:100%;
+}
+
+@keyframes dribble{
+	0%{
+    opacity: 0;
+	border-radius:50%;
+	transform:translate(0,-200px)scale(1)rotate(0deg);
+	
+	}
+	
+	70%{
+	transform:translate(0px,20px) scale(1) rotate(0deg);	
+	}
+
+	
+	100%{
+	opacity: 1;
+	border-radius:100%;
+	transform:translate(0px,0px) scale(1) rotate(0deg);
+	
+	}
+	
+	
+}
+
+
+
+header{
+display:flex;
+flex-direction:row;	
+align-items:center;
+justify-content:center;
+padding-right:50px;
+}
+
+ul{
+padding-left:20px;
+padding:20px;
+display:flex;
+justify-content:space-around;
+border:thick double white;
+border-radius:15px;
+list-style-type:none;
+align-items:center;	
+width:2000px;
+animation:word 2s ease;
+}
+
+@keyframes word{
+	0%{
+    opacity: 0;
+	border-radius:0%;
+	transform:translate(0,-200px)scale(1)rotate(0deg);
+	}
+	
+	70%{
+	transform:translate(0px,20px) scale(1) rotate(0deg);	
+	}
+	
+	
+	100%{
+	opacity: 1;
+	border-radius:15px;
+	transform:translate(0px,0px) scale(1) rotate(0deg);
+	
+	}
+	
+	
+}
+
+
+ul a{
+text-decoration:none;
+align-items:center;
+font-size:25px;
+margin:20px;
+list-style-type:none; 
+text-align:center;
+color:white;
+}
+
+li{
+margin:10px;
+border-right:thick double white;
+border-left:thick double white;
+transition:all 1s ease-out;
+}
+
+li:hover a{
+box-shadow: 0 0 5px 5px #A9A9A9;
+color:white;
+background-color:#A9A9A9;
+}
+
+img{
+width:300px;
+border-radius:5%;;
+padding:15px;
+}
+
+main{
+padding:10px;
+display:flex;
+flex-direction:column;	
+align-items:center;
+justify-content:center;
+}
+
+section{
+color:white;	
+padding:10px;
+display:flex;
+flex-direction:row;
+align-items:center;
+border-top:4px solid;
+}
+
+
+p{
+padding:10px;
+font-size:20px;
+color:white;
+}
+
+span{
+animation:main 3s ease;
+display:flex;
+text-align:justify;
+flex-direction:column;
+width:700px;
+}
+
+@keyframes main{
+	0%{
+    opacity: 0;
+	border-radius:0%;
+	transform:translate(0,-200px)scale(1)rotate(0deg);
+	
+	}
+	
+	70%{
+	transform:translate(0px,20px) scale(1) rotate(0deg);	
+	}
+
+	
+	100%{
+	opacity: 1;
+	transform:translate(0px,0px) scale(1) rotate(0deg);
+	
+	}
+}
+
+
+.foto_ukr{
+width:200px;
+}
+
+.ximik{
+
+}
